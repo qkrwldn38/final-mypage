@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밧쥬의 블로그</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-full">
+        <nav class="bg-[#1d3557]">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16  items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-8 w-8" src="./img/logo.png" alt="Your Company">
+                        </div>
+                        <div class="hidden md:block justify-items-end">
+                            <div class="ml-10 flex items-baseline space-x-4">
+                                <a href="index.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">홈으로</a>
+
+                                <a href="intro.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">자기소개</a>
+
+                                <a href="profil.html"
+                                    class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                                    aria-current="page">포트폴리오</a>
+
+                                <a href="hobby.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">취미생활</a>
+
+                                <a href="sight.html"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                                    aria-current="page">직관사진</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="bg-white">
+            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 shadow">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900">내가 만든 웹페이지📃</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="bg-white">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 shadow">
+                    <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-16">
+                        <h2 class="text-2xl font-bold text-gray-900">지우의 포트폴리오</h2>
+
+                        <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+                            <div class="group relative">
+                                <div
+                                    class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                                    <img src="./img/web1.png" alt="CSS블로그"
+                                        class="h-full w-full object-cover object-center">
+                                </div>
+                                <h3 class="mt-6 text-sm text-gray-500">
+                                    <a href="https://zziublog.netlify.app/">
+                                        <span class="absolute inset-0"></span>
+                                        1st
+                                    </a>
+                                </h3>
+                                <p class="text-base font-semibold text-gray-900">CSS를 활용해서 만든 블로그</p>
+                            </div>
+
+                            <div class="group relative">
+                                <div
+                                    class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                                    <img src="./img/web2.png" alt="bootstrap블로그"
+                                        class="h-full w-full object-cover object-center">
+                                </div>
+                                <h3 class="mt-6 text-sm text-gray-500">
+                                    <a href="https://booottstrapblog.netlify.app/">
+                                        <span class="absolute inset-0"></span>
+                                        2nd
+                                    </a>
+                                </h3>
+                                <p class="text-base font-semibold text-gray-900">Bootstrap을 활용해서 만든 블로그</p>
+                            </div>
+
+                            <div class="group relative">
+                                <div
+                                    class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                                    <img src="./img/web3.png" alt="tailwind블로그"
+                                        class="h-full w-full object-cover object-center">
+                                </div>
+                                <h3 class="mt-6 text-sm text-gray-500">
+                                    <a href="https://tailwind-bllog.netlify.app/">
+                                        <span class="absolute inset-0"></span>
+                                        3rd
+                                    </a>
+                                </h3>
+                                <p class="text-base font-semibold text-gray-900">Tailwind를 활용해서 만든 블로그</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white py-10 px-4">
+                            <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
+                                <h1 class="text-2xl font-bold mb-4">Baseball Game</h1>
+                                <form id="form">
+                                    <input id="input" type="text" class="border border-gray-300 rounded px-4 py-2 mb-4"
+                                        placeholder="4자리 숫자를 입력해주세요" required>
+                                    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">확인</button>
+                                </form>
+                                <div id="logs" class="mt-4"></div>
+                            </div>
+
+                            <script>
+                                const $input = document.querySelector('#input');
+                                const $form = document.querySelector('#form');
+                                const $logs = document.querySelector('#logs');
+
+                                const numbers = [];
+                                for (let n = 1; n <= 9; n += 1) {
+                                    numbers.push(n);
+                                }
+
+                                const answer = [];
+                                for (let n = 0; n <= 3; n += 1) {
+                                    const index = Math.floor(Math.random() * numbers.length);
+                                    answer.push(numbers[index]);
+                                    numbers.splice(index, 1);
+                                }
+                                console.log(answer);
+
+                                const tries = [];
+
+                                function checkInput(input) {
+                                    if (input.length !== 4) {
+                                        return alert('4자리 숫자를 입력해주세요');
+                                    }
+                                    if (new Set(input).size !== 4) {
+                                        return alert('중복되지 않게 입력해 주세요');
+                                    }
+                                    if (tries.includes(input)) {
+                                        return alert('이미 시도한 값입니다');
+                                    }
+                                    return true;
+                                }
+
+                                $form.addEventListener('submit', (event) => {
+                                    event.preventDefault();
+                                    const value = $input.value;
+                                    $input.value = '';
+                                    const valid = checkInput(value);
+                                    if (!valid) return;
+                                    if (answer.join('') === value) {
+                                        $logs.textContent = '홈런!';
+                                        $input.focus();
+                                        return;
+                                    }
+                                    if (tries.length >= 9) {
+                                        const message = document.createTextNode(`패배! 정답은 ${answer.join('')}`);
+                                        $logs.appendChild(message);
+                                        $input.focus();
+                                        return;
+                                    }
+
+                                    let strike = 0;
+                                    let ball = 0;
+                                    for (let i = 0; i < answer.length; i++) {
+                                        const index = value.indexOf(answer[i]);
+                                        if (index > -1) {
+                                            if (index === i) {
+                                                strike += 1;
+                                            } else {
+                                                ball += 1;
+                                            }
+                                        }
+                                    }
+                                    const logText = `${value}: ${strike} 스트라이크 ${ball} 볼`;
+                                    const logElement = document.createElement('div');
+                                    logElement.textContent = logText;
+                                    $logs.appendChild(logElement);
+                                    $input.focus();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 mt-4">
+            <p>Copyright &copy; 2023, 중부대학교 정보보호학과 박지우</p>
+        </footer>
+    </div>
+</body>
+
+</html>
